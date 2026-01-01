@@ -157,6 +157,16 @@ Common errors:
 - Consider deployment strategies
 - Maintain documentation
 
+## Skills Provided
+
+This MCP server implements the following domain-specific skills:
+
+1. **Site Management** - Manage and monitor UniFi sites across your account
+2. **Infrastructure Management** - Manage hosts and devices across all sites
+3. **Deployment Management** - Track and manage deployments across infrastructure
+
+See [.github/skills](.github/skills) for detailed skill documentation.
+
 ## Documentation References
 
 For detailed information, users can consult:
@@ -164,6 +174,7 @@ For detailed information, users can consult:
 - **API Guide**: See `/DEVELOPMENT.md` for API details
 - **Configuration**: See `/.env.example` for configuration
 - **Docker**: See `/docker-compose.yml` for containerization
+- **Skills**: See `/.github/skills/` for domain-specific capabilities
 - **Troubleshooting**: See `/README.md#troubleshooting`
 
 ---
