@@ -1,5 +1,5 @@
-# Build stage
-FROM golang:1.23.2-alpine AS builder
+# Build stage - Use Harbor-cached base image
+FROM harbor.dataknife.net/dockerhub/library/golang:1.23.2-alpine AS builder
 
 RUN apk add --no-cache git
 
@@ -17,8 +17,8 @@ COPY . .
 # Build the application
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o bin/unifi-manager-mcp ./cmd
 
-# Runtime stage
-FROM alpine:latest
+# Runtime stage - Use Harbor-cached base image
+FROM harbor.dataknife.net/dockerhub/library/alpine:latest
 
 RUN apk --no-cache add ca-certificates
 

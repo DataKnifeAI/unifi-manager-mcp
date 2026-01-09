@@ -2,6 +2,8 @@ version: '3.8'
 
 services:
   unifi-manager-mcp:
+    image: harbor.dataknife.net/library/unifi-manager-mcp:latest
+    # Fallback to local build if image not available
     build:
       context: .
       dockerfile: Dockerfile
