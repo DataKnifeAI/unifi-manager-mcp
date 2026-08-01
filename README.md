@@ -1,5 +1,8 @@
 # UniFi Manager MCP
 
+![UniFi Site Manager MCP server](docs/assets/unifi-manager-mcp-hero.jpg)
+
+
 Model Context Protocol (MCP) server for Ubiquiti UniFi Site Manager API integration. Monitor and manage your UniFi infrastructure at scale through an AI-powered interface.
 
 **Focused on:** Site Manager API integration for monitoring hosts, devices, deployments, and network infrastructure at scale.
