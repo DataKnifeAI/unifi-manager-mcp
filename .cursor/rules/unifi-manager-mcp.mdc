@@ -1,0 +1,16 @@
+---
+description: unifi-manager-mcp project-specific agent guidance
+alwaysApply: true
+---
+
+# UniFi Manager MCP
+
+Go MCP server for UniFi Site Manager (multi-site).
+
+Cursor uses `.cursor/rules/` (this file + org common). Copilot instructions under `.github/` remain for other tools.
+
+## Conventions
+
+- Prefer env / `.env.example` for Site Manager API credentials
+- Keep tool handlers thin; share client code across site/host/device tools
+- Do not commit live credentials
